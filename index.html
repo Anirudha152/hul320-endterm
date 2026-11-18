@@ -2610,111 +2610,281 @@ ${bars([["Safe houses",176.9],["Cooling centres",157.0],["Seawalls",135.8],["Wat
 
 /* ───────────────────────── 16. CLIMATE FINANCE: SKOVGAARD CH 9 + OWID ───────────────────────── */
 M.push({t:"Climate finance & aid (Skovgaard 9; OWID)", c:[
-{t:"What 'climate finance' means here", h:`
-<p><b>Where this fits.</b> Mitigation and adaptation in poor countries need money, and rich countries caused most of the warming. This last topic asks how money from rich to poor countries for climate gets defined, counted and divided. It is the "who pays?" question from Module 0's one-story overview.</p>
-<p>Jakob Skovgaard, <i>The Economisation of Climate Change: How the G20, the OECD and the IMF Address Fossil Fuel Subsidies and Climate Finance</i> (2021), Ch 9 "Climate Finance: Key Issues".</p>
-<p><b>Definition used</b>: flows <b>from developed to developing countries</b> "whose expected effect is to reduce net greenhouse gas emissions and/or to enhance resilience" to climate change (Gupta et al. 2014). Flows within countries, to rich countries, or South–South are excluded.</p>
-<ul>
-<li>Developed-country governments give money as <b>ODA</b> (official development assistance, i.e. foreign aid), often through <b>MDBs</b> (multilateral development banks such as the World Bank). Rich countries' aid target is 0.7% of their <b>GNI</b> (gross national income, close to GDP).</li>
-<li>It is a <b>dual</b> issue: an environmental purpose pursued with an economic instrument. So it is the UNFCCC issue in which <b>finance ministries</b> are most involved.</li>
-<li>Public climate finance is <b>fiscal expenditure</b>, unlike fossil-fuel subsidy reform, the book's other topic.</li>
-<li>Mitigation gets the bulk of the money, and private finance is several times larger than public finance.</li>
-</ul>`},
-{t:"From Rio to Paris", h:`
-<table>
-<tr><th>Year</th><th>Milestone</th></tr>
-<tr><td><b>1992 Rio</b> (UNFCCC)</td><td>Developed countries shall "provide <b>new and additional</b> financial resources" (Art 4.3), under <b>Common but Differentiated Responsibilities and Respective Capabilities (CBDR)</b> (Art 4.2). <b>Annex II</b> (OECD members in 1992) pay. Annex I = Annex II + economies in transition. Developing = non-Annex I.</td></tr>
-<tr><td>1990s</td><td>Climate finance treated as a subtype of "environmental finance" (alongside the biodiversity and desertification conventions). Flows modest.</td></tr>
-<tr class="hl"><td><b>2009 Copenhagen (COP15)</b></td><td>Developed countries commit to "mobilizing jointly <b>USD 100 billion a year by 2020</b> … from a wide variety of sources, public and private". Fast-start finance of <b>$30 bn for 2010–12</b>. First mention of the <b>Green Climate Fund</b>. Developing countries had asked for 1–1.5% of developed-country GDP. <b>Delivery</b> (slides, OECD data): $83.3 bn mobilised in 2020, short of the target; <b>$115.9 bn in 2022, two years late</b>.</td></tr>
-<tr><td>2010 Cancun (COP16)</td><td>Green Climate Fund formally established.</td></tr>
-<tr><td><b>2015 Paris (COP21)</b></td><td>$100 bn continues to 2025; a new goal to be set before 2025 from a <b>floor of $100 bn</b>. Developing countries "encouraged" to contribute voluntarily (Art 9.2). <b>"New and additional" dropped.</b> Definitions still unresolved.</td></tr>
-</table>
-<div class="kim">"Mobilised" was never defined, which left open what counts toward the $100 bn. That is the biggest fight in the chapter.</div>`},
-{t:"What counts? The onion diagram", h:`
-<figure class="dia"><svg viewBox="0 0 640 395" role="img" aria-label="Onion diagram: dedicated climate funds at the centre, then other public finance, mobilised private finance and all other flows"><circle cx="182" cy="190" r="170" class="f3"/><circle cx="182" cy="190" r="128" class="f2"/><circle cx="182" cy="190" r="88" class="f1"/><circle cx="182" cy="190" r="46" class="boxa"/><circle cx="182" cy="190" r="170" class="ink" style="stroke-width:1"/><text x="182" y="186" text-anchor="middle" style="font-size:11px;font-weight:600">1 · Climate</text><text x="182" y="200" text-anchor="middle" style="font-size:11px;font-weight:600">funds</text><text x="182" y="126" text-anchor="middle" style="font-size:11px">2 · Other public</text><text x="182" y="86" text-anchor="middle" style="font-size:11px">3 · Mobilised private</text><text x="182" y="42" text-anchor="middle" style="font-size:11px">4 · Everything else</text><text x="370" y="40" class="a">1</text><text x="394" y="40">UNFCCC funds (GCF…) $0.6–1.6 bn</text><text x="394" y="55" class="m">+ other climate funds (CIFs) $1.4–2.4 bn</text><text x="370" y="92" class="a">2</text><text x="394" y="92">MDB climate finance $17–20 bn</text><text x="394" y="107" class="m">+ bilateral ODA ≈ $30 bn (most disputed)</text><text x="370" y="144" class="a">3</text><text x="394" y="144">Private finance mobilised by MDBs</text><text x="394" y="159" class="m">and bilateral agencies ≈ $15–17 bn</text><text x="370" y="196" class="a">4</text><text x="394" y="196">Domestic, North–North, South–South</text><text x="394" y="211" class="m">≈ $680 bn</text><text x="370" y="248" class="a">5?</text><text x="394" y="248">'Brown' finance (fossil, logging…)</text><text x="394" y="263" class="m">several times larger, outside the onion</text><text x="370" y="306" class="m">annual flows, 2015–16 (UNFCCC SCF 2018)</text><text x="182" y="385" text-anchor="middle" class="m">more contested as climate finance →</text></svg><figcaption>After the UNFCCC Standing Committee on Finance (2018), Skovgaard's Fig 9.1. Undisputed climate finance sits at the centre; the further out a ring, the more disputed it is. The numbered list on the right gives each ring's annual flow.</figcaption></figure>
+{t:"The whole chapter in one minute", h:`
+<p><b>Where this fits.</b> Every earlier module asked <i>what</i> should be done about climate change. This last topic asks <b>who pays for it</b>, which is the "who pays?" part of Module 0's overview.</p>
+<p>The story is short:</p>
 <ol>
-<li><b>Dedicated multilateral climate funds</b>: GCF and Adaptation Fund ($0.6–1.6 bn/yr), plus the World Bank's Climate Investment Funds ($1.4–2.4 bn). Some argue <i>only</i> this layer counts.</li>
-<li><b>Public finance through non-climate channels</b>: MDB climate lending ($17–20 bn) and bilateral ODA (about $30 bn). The latter is <b>most controversial</b>: donors label their own projects (<b>over-coding</b>), and it may not be "new and additional".</li>
-<li><b>Private finance mobilised</b> by MDBs and bilateral agencies through guarantees and risk-sharing ($15–17 bn).</li>
-<li><b>Everything else</b>: domestic, North–North and South–South flows (about $680 bn).</li>
-<li>Some add a fifth layer of <b>"brown finance"</b> (fossil fuels, logging, cement) that is several times larger than the green total.</li>
+<li><b>Poor countries need money.</b> They have to cut emissions (build solar instead of coal) and protect themselves from warming that is already happening (sea walls, drought-proof farming). They can't afford all of it.</li>
+<li><b>Rich countries caused most of the problem.</b> Most of the CO₂ already in the air came from the US, Europe and Japan.</li>
+<li><b>So rich countries promised to pay.</b> They first promised in 1992, then put a number on it in 2009: <b>$100 billion a year by 2020</b>.</li>
+<li><b>But they never agreed on the details.</b> Nobody settled <i>what counts</i> as this money, <i>who</i> should pay how much, <i>where</i> it should go, or <i>who decides</i>. Those disagreements are the whole chapter.</li>
 </ol>
-<p><b>Instruments</b>: grants clearly count. <b>Loans are disputed</b>, and most climate finance is loans or equity (MDBs lend almost exclusively). One fix is to count only the <b>grant equivalent</b> of a concessional loan: its market value minus its actual value. Only private finance <b>leveraged by public</b> money counts toward the $100 bn.</p>`},
-{t:"Generating finance: equity vs efficiency", h:`
+<p>Skovgaard's Ch 9 explains these disagreements. Then a short Our World in Data (OWID) article checks the real numbers.</p>
+<div class="key"><b>One sentence to remember:</b> rich countries want a <b>broad</b> definition of climate money, spent <b>efficiently</b>, with themselves <b>in control</b>. Poor countries want a <b>narrow</b> definition, shared out <b>fairly</b>, with themselves <b>having a say</b>. Every fight in this chapter is a version of that split.</div>
+<p class="src">Jakob Skovgaard, <i>The Economisation of Climate Change: How the G20, the OECD and the IMF Address Fossil Fuel Subsidies and Climate Finance</i> (Cambridge UP, 2021), Ch 9 "Climate Finance: Key Issues". Slides pp. 147–160.</p>`},
+{t:"Words you need first", h:`
+<p>The chapter uses a lot of jargon. Here it is in plain English.</p>
+<table>
+<tr><th>Term</th><th>Plain meaning</th></tr>
+<tr><td><b>Mitigation</b></td><td>Cutting emissions, so there is less warming. Example: a solar farm instead of a coal plant.</td></tr>
+<tr><td><b>Adaptation</b></td><td>Coping with the warming that happens anyway. Example: a sea wall, or seeds that survive drought.</td></tr>
+<tr><td><b>Developed / developing</b></td><td>Rich / poor countries. In the climate treaty, the payers are the countries that were rich OECD members in 1992. That list is called <b>Annex II</b>.</td></tr>
+<tr><td><b>UNFCCC</b></td><td>The UN climate treaty, signed at Rio in 1992. Its yearly meetings are <b>COPs</b> (Conferences of the Parties), e.g. COP15 Copenhagen and COP21 Paris.</td></tr>
+<tr><td><b>CBDR</b></td><td>"Common but Differentiated Responsibilities". Everyone must act on climate, but rich countries carry a bigger share. It is written into the treaty.</td></tr>
+<tr><td><b>ODA</b></td><td>Official development assistance, i.e. ordinary foreign aid that governments give for development (schools, hospitals, roads).</td></tr>
+<tr><td><b>MDB</b></td><td>Multilateral development bank: a bank owned by many governments that lends to poor countries. Examples: the World Bank and the Asian Development Bank.</td></tr>
+<tr><td><b>Public / private finance</b></td><td>Public = government money (from taxes). Private = money from banks, companies and investors who want a return.</td></tr>
+<tr><td><b>Grant / loan</b></td><td>A grant is a gift and never has to be paid back. A loan is paid back with interest. A <b>concessional</b> loan is a cheap loan, with lower interest or a longer time to repay than a bank would give.</td></tr>
+<tr><td><b>GNI</b></td><td>Gross national income: a country's total yearly income, close to GDP.</td></tr>
+</table>`},
+{t:"So what exactly is 'climate finance'?", h:`
+<p>Skovgaard uses a definition from the IPCC (Gupta et al. 2014). Climate finance is money flowing <b>from developed to developing countries</b> "whose <b>expected</b> effect is to reduce net greenhouse gas emissions and/or to enhance resilience" to climate change.</p>
+<p>Take it apart:</p>
+<ul>
+<li><b>"From developed to developing":</b> only rich-to-poor money counts.</li>
+<li><b>"Reduce emissions and/or enhance resilience":</b> mitigation, adaptation, or both.</li>
+<li><b>"Expected":</b> it counts if the project is <i>meant</i> to help the climate. Nobody checks whether it actually did.</li>
+</ul>
+<p><b>What this leaves out</b>:</p>
+<table>
+<tr><th>Not counted</th><th>Example</th></tr>
+<tr><td>Money spent inside a country</td><td>India paying for its own solar parks</td></tr>
+<tr><td>Money going to rich countries</td><td>A Japanese company building a wind farm in Germany</td></tr>
+<tr><td>Poor-to-poor ("South–South") money</td><td>China lending to an African country for a dam</td></tr>
+</table>
+<p>The definition is narrow on purpose. The chapter is about one thing: what rich countries <b>owe</b> poor ones under the climate treaty.</p>
+<h3>Why a book about "economisation" cares</h3>
+<ul>
+<li>Climate finance has an <b>environmental goal</b> (fight climate change) but uses an <b>economic tool</b> (money). Skovgaard calls this its <b>dual</b> nature.</li>
+<li>Because it is about money, <b>finance ministries</b> get more involved in it than in any other part of the UN climate talks. That fits the book's theme: climate change is increasingly handled by economic institutions and economic ideas.</li>
+<li>The book has two case topics. <b>Public climate finance is government spending</b> (fiscal expenditure): money taken from the budget and sent abroad. <b>Fossil-fuel subsidy reform</b>, the other topic, is the opposite. It <i>stops</i> spending on fossil-fuel support, so it usually saves money.</li>
+</ul>
+<h3>Two facts that stay true throughout</h3>
+<ol>
+<li><b>Most money goes to mitigation, not adaptation.</b> This is explained below in "Fight 3".</li>
+<li><b>Private money is several times bigger than public money</b>, but only "depending on the definition". Whether private money should count at all is one of the fights.</li>
+</ol>`},
+{t:"The promise, step by step (1992 → 2015)", h:`
+<table>
+<tr><th>When</th><th>What happened</th><th>Why it matters</th></tr>
+<tr><td><b>1992, Rio</b><br>(UNFCCC signed)</td><td>Rich countries "shall provide <b>new and additional</b> financial resources" to cover poor countries' costs, following <b>CBDR</b>.</td><td>The legal root of everything. "New and additional" means on top of existing aid. That phrase starts a long fight.</td></tr>
+<tr><td>1990s–2000s</td><td>Climate money was treated as one kind of "environmental finance", alongside biodiversity and desertification. The amounts were small.</td><td>Poor countries kept pushing the issue at every COP.</td></tr>
+<tr class="hl"><td><b>2009, Copenhagen</b><br>(COP15)</td><td>Rich countries promise to "mobilise jointly <b>$100 billion a year by 2020</b>… from a wide variety of sources, public and private". There is also a short-term "fast-start" sum of <b>$30 bn for 2010–12</b>. The <b>Green Climate Fund</b> is first mentioned.</td><td>Poor countries had asked for <b>1–1.5% of rich countries' GDP</b>, which is far more. Some rich countries wanted no number at all. "Mobilise" was <b>never defined</b>, and that opened every later argument about what counts.</td></tr>
+<tr><td>2010, Cancun (COP16)</td><td>The Green Climate Fund is formally set up.</td><td>It becomes the main UN climate fund.</td></tr>
+<tr><td><b>2015, Paris</b><br>(COP21)</td><td>The $100 bn goal is extended to 2025. A new, bigger goal is to be set before 2025, with $100 bn as the minimum. Poor countries are "encouraged" to contribute voluntarily (Art 9.2).</td><td>The words <b>"new and additional" are dropped</b>. The definitions are still not settled.</td></tr>
+</table>
+<div class="tip"><b>Was the promise kept?</b> Not on time. According to OECD figures quoted in the slides, $83.3 bn was mobilised in 2020, short of the target. The figure reached <b>$115.9 bn in 2022, two years late</b>. Even these numbers are disputed, because they depend on what you count.</div>`},
+{t:"Where the money actually flows", h:`
+<p>Before getting to the arguments, it helps to see the routes the money takes.</p>
+<figure class="dia"><svg viewBox="0 0 640 320" role="img" aria-label="Rich-country governments send money through climate funds, development banks or direct aid to developing countries; banks and aid agencies also pull in private investors"><rect class="boxa" x="10" y="104" width="130" height="92" rx="8"/><text x="75" y="138.0" text-anchor="middle">Rich-country</text><text x="75" y="154.0" text-anchor="middle">governments</text><text x="75" y="170.0" text-anchor="middle" class="m">(taxpayers' money)</text><rect class="boxa" x="500" y="104" width="130" height="92" rx="8"/><text x="565" y="130.0" text-anchor="middle">Developing</text><text x="565" y="146.0" text-anchor="middle">countries</text><text x="565" y="162.0" text-anchor="middle" class="m">(solar farms,</text><text x="565" y="178.0" text-anchor="middle" class="m">sea walls…)</text><rect class="box" x="200" y="14" width="240" height="50" rx="8"/><text x="212" y="35" style="font-weight:600">Climate funds</text><text x="212" y="53" class="m">Green Climate Fund, Adaptation Fund</text><text x="432" y="35" text-anchor="end" class="a">ring 1</text><path class="arr" d="M142,150 L197,39"/><path class="arr" d="M442,39 L497,150"/><rect class="box" x="200" y="86" width="240" height="50" rx="8"/><text x="212" y="107" style="font-weight:600">Development banks (MDBs)</text><text x="212" y="125" class="m">World Bank, Asian Development Bank</text><text x="432" y="107" text-anchor="end" class="a">ring 2</text><path class="arr" d="M142,150 L197,111"/><path class="arr" d="M442,111 L497,150"/><rect class="box" x="200" y="158" width="240" height="50" rx="8"/><text x="212" y="179" style="font-weight:600">Direct aid (bilateral ODA)</text><text x="212" y="197" class="m">one government to another</text><text x="432" y="179" text-anchor="end" class="a">ring 2</text><path class="arr" d="M142,150 L197,183"/><path class="arr" d="M442,183 L497,150"/><rect class="box" x="200" y="262" width="240" height="50" rx="8"/><text x="212" y="283" style="font-weight:600">Private investors</text><text x="212" y="301" class="m">banks, companies, pension funds</text><text x="432" y="283" text-anchor="end" class="a">ring 3</text><path class="arr" style="stroke-dasharray:4 3" d="M320,210 L320,259"/><text x="328" y="240" class="m">guarantees, shared risk</text><path class="arr" d="M442,287 L560,287 L560,199"/></svg><figcaption>Rich-country governments send money by three main routes. Banks and aid agencies can also use public money to persuade <b>private investors</b> to put in their own money, for example by promising to cover losses if a project fails. The "ring" labels match the onion diagram on the next card.</figcaption></figure>
+<ul>
+<li><b>Climate funds</b> exist only for climate, so nobody doubts their money is climate money. But they are small.</li>
+<li><b>Development banks</b> lend for all sorts of things and label some of their loans "climate".</li>
+<li><b>Direct aid</b> is a government giving to another government. The <i>donor</i> decides which projects to call "climate". That is the weak point.</li>
+<li><b>Private investors</b> only count if public money pulled them in. Skovgaard's word is "mobilised" or "leveraged".</li>
+</ul>
+<p>Most decisions are made <b>outside the UN</b>, in rich-country governments, at MDB headquarters, and in company boardrooms. That point comes back in the "Who's in charge?" card.</p>`},
+{t:"Fight 1: what counts as climate money? (the onion)", h:`
+<p>Skovgaard calls this <b>the single most important question</b> in climate finance. The UN's Standing Committee on Finance drew it as an "onion". The closer a type of money sits to the centre, the more <b>everyone agrees</b> it counts. Further out, people argue more.</p>
+<figure class="dia"><svg viewBox="0 0 660 395" role="img" aria-label="Onion diagram: dedicated climate funds at the centre, then other public money, mobilised private money and all other flows; further out means more disputed"><circle cx="182" cy="190" r="170" class="box"/><circle cx="182" cy="190" r="170" class="f3"/><circle cx="182" cy="190" r="128" class="box"/><circle cx="182" cy="190" r="128" class="f2"/><circle cx="182" cy="190" r="88" class="box"/><circle cx="182" cy="190" r="88" class="f1"/><circle cx="182" cy="190" r="46" class="box"/><circle cx="182" cy="190" r="46" class="boxa"/><circle cx="182" cy="190" r="170" class="ink" style="stroke-width:1"/><text x="182" y="194" text-anchor="middle" style="font-size:12px;font-weight:600">1</text><text x="182" y="126" text-anchor="middle" style="font-size:12px;font-weight:600">2</text><text x="182" y="86" text-anchor="middle" style="font-size:12px;font-weight:600">3</text><text x="182" y="44" text-anchor="middle" style="font-size:12px;font-weight:600">4</text><text x="370" y="40" class="a">1</text><text x="394" y="40">Climate funds (Green Climate Fund etc.)</text><text x="394" y="55" class="m">≈ $2–4 bn · everyone agrees this counts</text><text x="370" y="92" class="a">2</text><text x="394" y="92">Other public money: MDB loans, direct aid</text><text x="394" y="107" class="m">≈ $47–50 bn · relabelled aid? most disputed</text><text x="370" y="144" class="a">3</text><text x="394" y="144">Private money pulled in by public money</text><text x="394" y="159" class="m">≈ $15–17 bn · counts only if 'mobilised'</text><text x="370" y="196" class="a">4</text><text x="394" y="196">Everything else (domestic, South–South…)</text><text x="394" y="211" class="m">≈ $680 bn · not rich→poor, so left out</text><text x="370" y="248" class="a">5?</text><text x="394" y="248">'Brown' money: fossil fuels, logging…</text><text x="394" y="263" class="m">several times bigger than all the green rings</text><text x="370" y="306" class="m">yearly flows, 2015–16 (UNFCCC SCF 2018)</text><text x="182" y="385" text-anchor="middle" class="m">centre = undisputed · further out = more disputed</text></svg><figcaption>After Skovgaard's Fig 9.1, from the UNFCCC Standing Committee on Finance (2018). The rings are not drawn to scale.</figcaption></figure>
+<ol>
+<li><b>Climate funds</b> (Green Climate Fund, Adaptation Fund, and the World Bank's Climate Investment Funds). Nobody disputes this money. Some people say <i>only</i> this ring should count. It is small, about $2–4 bn a year.</li>
+<li><b>Other public money</b>: MDB climate loans ($17–20 bn) and direct aid that donors label "climate" (about $30 bn). The direct aid is <b>the most controversial</b> part, for two reasons:
+<ul><li><b>Over-coding.</b> Each donor labels its own projects, so it tends to exaggerate the climate part. An ordinary road project gets called "climate-resilient infrastructure".</li>
+<li><b>Not "new and additional".</b> If the money would have been given as aid anyway, relabelling it "climate" adds nothing new.</li></ul></li>
+<li><b>Private money "mobilised" by public money</b> (about $15–17 bn). Example: the World Bank promises to cover part of a loss, so a private bank agrees to fund a solar farm.</li>
+<li><b>Everything else</b>: money spent inside countries, rich-to-rich and poor-to-poor (about $680 bn). This is outside the definition.</li>
+</ol>
+<p>Some add a fifth ring of <b>"brown" money</b>: finance for coal, oil, logging and cement. It is several times larger than all the green rings together. It works against the climate, so it is not counted, but it shows how small the green flows are in comparison.</p>`},
+{t:"Fight 1, part 2: loans vs grants", h:`
+<p>A second "what counts" problem: <b>most climate finance is loans, not gifts</b>. Even public money is mostly loans, and MDBs give almost nothing but loans.</p>
+<p>Is that fair to count? Compare two cases:</p>
 <div class="vs">
-<div><h3>Equity norms</h3><ul><li><b>CBDR</b>: rich countries bear more, arguably all</li><li><b>Historical responsibility</b>: pay in proportion to past emissions</li><li>So public finance is crucial, and climate finance is distinct from aid</li></ul></div>
-<div><h3>Efficiency norm</h3><ul><li>Maximum benefit per dollar, matching the worldview of economic institutions</li><li>So private finance is crucial, and use synergies with development aid</li><li>Governments often maximise <i>national</i> rather than global benefit</li></ul></div>
+<div><h3>Country A</h3><p>Gets a <b>$100 m grant</b> for a sea wall. It never pays anything back.</p></div>
+<div><h3>Country B</h3><p>Gets a <b>$100 m loan</b> for a sea wall. It pays back the $100 m <i>plus interest</i>.</p></div>
+</div>
+<p>If both count as "$100 m of climate finance", the donor looks equally generous in both cases, even though Country B ends up paying for its own sea wall. Poor countries see this as unfair.</p>
+<h3>The proposed fix: the "grant equivalent"</h3>
+<p>Count only the part of a loan that is really a gift. That is the difference between what the loan would cost from an ordinary bank and what the cheap loan actually costs.</p>
+<details class="work"><summary>Worked example (illustrative numbers)</summary>
+<ol>
+<li>A bank would lend $100 m at 8% interest. A development bank lends it at 1%.</li>
+<li>Over the life of the loan, the cheap rate saves the country, say, <b>$30 m</b> in interest.</li>
+<li>That $30 m is the real help, the <b>grant equivalent</b>. So the donor should report $30 m, not $100 m.</li>
+</ol></details>
+<p>A similar rule exists for private money. Under the UNFCCC, private money only counts toward the $100 bn if public money <b>caused</b> it (it was "mobilised" or "leveraged"). Both rules come with long technical arguments about how to do the sums.</p>`},
+{t:"Two ways of judging: fairness vs value for money", h:`
+<p>Fights 2 and 3 are arguments about values. Skovgaard says two ideas compete. It helps to understand them before the details.</p>
+<div class="vs">
+<div><h3>Equity (fairness)</h3>
+<p>Ask: <b>who caused the problem, and who is hurt most?</b></p>
+<ul>
+<li><b>CBDR</b>: rich countries should carry more of the burden, and arguably all of it.</li>
+<li><b>Historical responsibility</b>: pay according to how much you emitted in the past.</li>
+<li><b>Vulnerability</b>: help the poorest and most exposed countries first.</li>
+</ul>
+<p><i>Favoured by poor countries and NGOs.</i></p></div>
+<div><h3>Efficiency (value for money)</h3>
+<p>Ask: <b>where does each dollar do the most good?</b></p>
+<ul>
+<li>Get the biggest climate benefit for a given amount of money.</li>
+<li>Count private money. More money is more money, whoever provides it.</li>
+<li>Combine climate money with existing aid to avoid duplication.</li>
+</ul>
+<p><i>Favoured by rich countries, development banks, and economic institutions like the OECD and IMF.</i></p></div>
+</div>
+<p>One catch: textbook efficiency means the most benefit for the <b>whole world</b>. In practice, governments often chase the most benefit for <b>their own country</b>.</p>
+<p>A third idea, <b>effectiveness</b> (does it actually cut emissions or protect people?), is not fought over, because everyone agrees climate money should work.</p>
+<div class="kim">An analogy: four flatmates have to pay to repair damage to the flat. <b>Equity</b> says whoever caused most of the damage pays most, and the broke flatmate pays least. <b>Efficiency</b> says fix whatever gives the biggest improvement per rupee first, and don't worry about who pays.</div>`},
+{t:"Fight 2: raising the money (who pays, and what counts)", h:`
+<p>This is the <b>generation</b> question: where should the money come from?</p>
+<h3>1. How much should each rich country pay?</h3>
+<ul>
+<li>One option is a <b>"burden-sharing key"</b>, a formula that sets each country's share by its GDP (ability to pay) or by its emissions (responsibility). Poor countries and NGOs liked this idea.</li>
+<li>The <b>US</b> (even under Obama) was against any such formula. The <b>EU</b> was for it.</li>
+<li><b>Result: no formula was ever adopted.</b> Each country decides for itself.</li>
+</ul>
+<h3>2. Should big emerging economies like China pay too?</h3>
+<ul>
+<li>The US said yes. The EU also wanted contributions from developing countries.</li>
+<li>Developing countries disagree among themselves. <b>China</b> is wary of "historical responsibility" because its own past emissions are now large. The <b>Least Developed Countries</b> (the very poorest) actually encouraged emerging economies to chip in.</li>
+<li>Paris settled on a soft version: developing countries are <b>"encouraged"</b> to contribute voluntarily.</li>
+</ul>
+<h3>3. Is it really new money, or relabelled aid?</h3>
+<ul>
+<li>Rich countries have long promised to give <b>0.7% of GNI</b> as aid. <b>Few have ever met that target.</b></li>
+<li>Poor countries say climate money must be <b>"new and additional"</b>, on top of that aid. Several argue that only money <i>above</i> 0.7% should count as climate finance. Otherwise a donor can move money from schools to solar panels and call it a climate payment.</li>
+<li>They also see aid and climate money as <b>different in kind</b>. Aid is charity: the rich helping the poor. Climate money is closer to <b>compensation</b>: the polluter paying for harm done. So it is an <b>entitlement</b> and should come as grants with few conditions, not as loans.</li>
+<li>Rich countries and banks reply, on efficiency grounds, that climate and development overlap. Combining them makes sense.</li>
+</ul>
+<h3>4. Should private money count?</h3>
+<ul>
+<li>Rich countries and banks say private money is essential, because public budgets are far too small.</li>
+<li>Poor countries agree private money matters, but want the targets to count <b>public money only</b>. They fear that counting private money lets rich governments off the hook.</li>
+<li><b>"Innovative sources"</b>, such as a levy on international flights, are popular with NGOs. Governments resist them because they don't want to give up control over taxes.</li>
+</ul>`},
+{t:"Fight 3: spending the money (where it goes, who decides)", h:`
+<p>This is the <b>allocation</b> question: once the money exists, where should it go?</p>
+<h3>Mitigation or adaptation?</h3>
+<div class="vs">
+<div><h3>Why donors prefer mitigation</h3>
+<p>Cutting a tonne of CO₂ helps the <b>whole planet</b>, including the donor country. It is a <b>global public good</b>.</p>
+<p>It is also cheaper to cut a tonne in a developing country than in Germany. So when Germany pays for a solar farm in India, Germany gets more climate benefit per euro and India gets free investment. Both gain and nobody loses. Economists call that <b>Pareto-improving</b>.</p>
+<p>So mitigation is easy to defend on <b>efficiency</b> grounds.</p></div>
+<div><h3>Why adaptation struggles</h3>
+<p>A sea wall in Bangladesh protects <b>Bangladesh</b>. The donor gets only indirect benefits, such as fewer climate refugees.</p>
+<p>Adaptation projects also don't earn money (a sea wall sells nothing), so private investors avoid them.</p>
+<p>So adaptation is defended on <b>equity</b> grounds: vulnerability and historical responsibility.</p></div>
 </div>
 <ul>
-<li><b>Burden-sharing key</b> by GDP or by emissions? Should emerging economies pay? China is sceptical of historical responsibility. The Least Developed Countries urged emerging economies to contribute. The <b>US</b> (including under Obama) opposed burden-sharing. The EU favoured both. <b>No key was adopted.</b></li>
-<li><b>New and additional</b> to the <b>0.7% of GNI</b> aid target, which few donors meet. Several developing countries say only finance above 0.7% should count.</li>
-<li>Developing countries and NGOs see climate finance as an <b>entitlement</b> (owed for historical responsibility), so it should come as grants with minimal conditions. Aid, by contrast, rests on the duty of the wealthy to help the poor.</li>
-<li>"Innovative sources" such as aviation levies are popular with NGOs but resisted by states, which don't want to give up control over taxation.</li>
-</ul>`},
-{t:"Allocating finance & who decides", h:`
-<table>
-<tr><th></th><th>Generation</th><th>Allocation</th></tr>
-<tr><td><b>Equity</b></td><td>CBDR, historical responsibility → public money from the North, distinct from aid</td><td><b>Vulnerability</b> → prioritise poor and vulnerable countries and <b>adaptation</b>. Those affected should help decide.</td></tr>
-<tr><td><b>Efficiency</b></td><td>Maximise global benefit → private finance, synergies with aid</td><td>Maximise global benefit → <b>emerging economies</b> and <b>mitigation</b></td></tr>
-</table>
-<ul>
-<li><b>Mitigation</b> is a <b>global public good</b>: donors benefit wherever it happens, and it is Pareto-improving because abatement is cheaper in developing countries. <b>Adaptation</b> brings donors only indirect benefits (e.g. fewer climate refugees), so it is argued for on vulnerability and responsibility grounds.</li>
-<li>LDCs and Small Island Developing States want a <b>50:50</b> mitigation–adaptation split. Donors prefer mitigation.</li>
-<li>If climate finance is treated as aid, <b>donors decide</b> where it goes. If it is treated as restitution, recipients should have a say. Efficiency arguments de facto favour developed countries.</li>
-</ul>`},
-{t:"The fragmented system", h:`
-<ul>
-<li><b>UNFCCC</b> is the most important institution (the $100 bn target, CBDR, the Standing Committee on Finance's data). It decides by <b>consensus</b>, which gives developing countries leverage. But most decisions are made <b>outside</b> it. Its funds (GCF, Adaptation Fund, LDC Fund, partly the GEF) disbursed only $0.6–1.6 bn in 2015–16, and the Trump administration refused to contribute.</li>
-<li><b>Other UN bodies</b>: UNDP and UNEP implement projects. The High-level Advisory Group on Climate Change Financing (2010) under Ban Ki-moon studied sources. UNEP Finance Initiative.</li>
-<li><b>World Bank</b>: favoured by developed countries because votes follow financial contributions and GDP. It runs the CIFs, promoted the CDM (Kyoto's Clean Development Mechanism, which let rich countries earn emission credits by funding projects in poor ones), and is criticised for fossil-fuel lending.</li>
-<li><b>Regional MDBs</b> (AfDB, ADB, EBRD, IDB): scaled up climate finance, but less active than the World Bank.</li>
-<li><b>Civil society</b>: think tanks (Climate Policy Initiative, ODI, WRI) produce data. NGOs (Climate Action Network, Greenpeace, WWF, Oxfam) push equity.</li>
-<li><b>Corporate actors</b>: investor networks such as IIGCC (the Institutional Investors Group on Climate Change). They focus on mitigation.</li>
-<li><b>Domestic level matters most</b>: allocation is driven by donor income, environmental attention, responsibility, recipient vulnerability and government ideology.</li>
+<li>Efficiency also says to send mitigation money to <b>emerging economies</b> such as India, China or Brazil, where there are many emissions to cut, rather than to the poorest countries, which emit very little.</li>
+<li>The <b>Least Developed Countries</b> and <b>Small Island Developing States</b> want a <b>50:50 split</b> between mitigation and adaptation. Rich countries prefer mitigation.</li>
 </ul>
-<div class="key">The dividing line: developed countries want <b>broad definitions, efficiency and control</b>. Developing countries want <b>narrow definitions, equity and influence</b>.</div>`},
-{t:"OWID: how much aid is spent on climate?", h:`
-<p>Skovgaard argued about what <i>should</i> count; Our World in Data measures what currently <i>is</i> counted. Hannah Ritchie &amp; Pablo Arriagada, <i>Our World in Data</i> (Oct 2026), use the OECD <b>RioMarkers</b> database (donors tag each aid project as climate-related or not) (pointed out by Richard Tol). It covers <b>bilateral</b> aid only, about 90% of development aid.</p>
+<h3>Who decides where it goes?</h3>
 <ul>
-<li>2024: about <b>$210 bn</b> of bilateral aid committed. <b>31%</b> was non-allocable (refugee costs in donor countries, admin, budget support, debt relief). <b>69% (about $145 bn)</b> went to specific projects.</li>
-<li>About <b>$50 bn</b> of that (34% of allocable aid) was climate-related: <b>mitigation-only $17 bn</b>, <b>adaptation-only $16 bn</b>, <b>both $17 bn</b>. The other $96 bn (66%) wasn't marked as climate.</li>
+<li>If climate money is treated as <b>aid</b>, the <b>donor decides</b>, just as with any aid.</li>
+<li>If it is treated as <b>compensation</b> for historical responsibility, the countries harmed should <b>have a say</b>.</li>
+<li>Efficiency doesn't directly answer "who decides". But it supports using existing aid systems and avoiding new institutions, which in practice <b>keeps rich countries in control</b>.</li>
 </ul>
-${bars([["Bilateral project aid",34],["All bilateral aid",24],["All development aid",20]],40,"%","")}
-<p class="src">Climate-related share of each total, 2024. "About one-fifth" of all aid assumes zero multilateral climate aid, so the true share is probably a bit higher.</p>
-<ul>
-<li><b>Trend</b>: about $22 bn (<b>18%</b>) in 2010 → <b>$50 bn (34%)</b> in 2024. 2010 is underestimated because 37% of aid was unscreened then; under 10% has been unscreened since 2014. Funding has shifted from mostly mitigation toward adaptation.</li>
-</ul>`},
-{t:"OWID: principal vs significant, and the two worries", h:`
-<p>RioMarkers tags climate as a <b>principal</b> objective (the project probably wouldn't exist without climate change) or a <b>significant</b> (secondary) one. More than <b>half</b> of climate-tagged funding is secondary-only, yet counted at its <b>full value</b>.</p>
-<div class="key">Counting only principal-objective projects drops climate's share of bilateral project aid from <b>34% to 13%</b>.</div>
+<h3>Skovgaard's Table 9.1: the whole debate in one grid</h3>
 <table>
-<tr><th>Example</th><th>Tag</th><th>Why it's ambiguous</th></tr>
-<tr><td>Japan → Iraq, Samawah water supply, $310 m</td><td>Adaptation, principal</td><td>Drought-proof water is a core development need anyway</td></tr>
-<tr><td>France → Tanzania, Kakono hydro plant, $122 m</td><td>Principal</td><td>Energy access is a development goal in itself</td></tr>
-<tr><td>South Korea → Tanzania, hospital and training centre, $163 m</td><td>Mitigation, secondary</td><td>A standard hospital, with all $163 m counted because of energy-efficient design</td></tr>
+<tr><th></th><th>Raising the money</th><th>Spending the money</th></tr>
+<tr><td><b>Equity</b></td><td>CBDR, historical responsibility → <b>public</b> money from rich countries is crucial, and climate money is <b>separate from aid</b></td><td>Vulnerability → <b>poor, vulnerable countries</b> and <b>adaptation</b> first. Those affected help decide.</td></tr>
+<tr><td><b>Efficiency</b></td><td>Maximise global benefit → <b>private</b> money is crucial, and combine with aid</td><td>Maximise global benefit → <b>emerging economies</b> and <b>mitigation</b> first</td></tr>
+</table>`},
+{t:"Who's in charge? Nobody, fully", h:`
+<p>There is no single body running climate finance. Skovgaard calls the system <b>fragmented</b>: many institutions each control a piece.</p>
+<table>
+<tr><th>Who</th><th>What they do</th><th>Whose side they lean to</th></tr>
+<tr><td><b>UNFCCC</b> (the UN climate treaty)</td><td>Sets the rules and targets ($100 bn, CBDR). Its funds (Green Climate Fund, Adaptation Fund and others) are small: <b>$0.6–1.6 bn</b> in 2015–16. The Trump administration refused to pay in.</td><td><b>Poor countries.</b> Decisions need consensus, so every country effectively has a veto. That is why poor countries want more money to go through UN funds.</td></tr>
+<tr><td>Other UN bodies (UNDP, UNEP)</td><td>Run projects on the ground. A 2010 UN advisory group (under Ban Ki-moon) studied where money could come from, such as flight levies.</td><td>Poor countries also have influence here.</td></tr>
+<tr><td><b>World Bank</b></td><td>A big lender of climate money (through its Climate Investment Funds and normal loans). It promoted carbon-credit projects. It is criticised for still funding fossil fuels.</td><td><b>Rich countries.</b> Votes depend on how much money a country puts in, so rich countries prefer to route money here.</td></tr>
+<tr><td>Regional banks (African, Asian, European, Inter-American development banks)</td><td>Have increased climate lending but are less active than the World Bank. They also fund fossil fuels.</td><td>-</td></tr>
+<tr><td>Think tanks (Climate Policy Initiative, ODI, WRI)</td><td>Produce the data and reports on how much money flows.</td><td>-</td></tr>
+<tr><td>NGOs (Oxfam, WWF, Greenpeace, Climate Action Network)</td><td>Campaign and publish reports.</td><td><b>Poor countries.</b> They stress fairness.</td></tr>
+<tr><td>Companies and investors (e.g. the Institutional Investors Group on Climate Change)</td><td>Fund projects and push for climate-friendly policy.</td><td>Focus on <b>mitigation</b>, which can earn returns.</td></tr>
 </table>
+<p><b>Most important of all: each rich country's own government.</b> Since no international body is in charge, each donor decides how much to give and where it goes. Those decisions depend on domestic things: how rich the country is, how much its voters care about the environment, which party is in power, and which ministry handles the money.</p>
+<div class="key">So the pattern repeats. Poor countries want money run through the <b>UN</b>, where they have a voice. Rich countries prefer the <b>World Bank and their own aid agencies</b>, where they have control.</div>`},
+{t:"OWID check 1: how much aid goes to climate?", h:`
+<p>Skovgaard argues about what <i>should</i> count. A 2026 Our World in Data article (Hannah Ritchie &amp; Pablo Arriagada) measures what currently <i>is</i> counted.</p>
+<p><b>The data:</b> the OECD's <b>RioMarkers</b> database. Donors tag each aid project as climate-related or not. It covers <b>bilateral</b> aid only (country to country), which is about 90% of all development aid.</p>
+<h3>Following the money in 2024</h3>
+<ol>
+<li>Rich countries committed about <b>$210 bn</b> in bilateral aid.</li>
+<li>About 31% couldn't be tied to any project: hosting refugees at home, admin costs, debt relief, general budget support. That leaves about <b>$145 bn</b> spent on specific projects.</li>
+<li>Of that $145 bn, about <b>$50 bn (34%)</b> was tagged climate-related. It splits roughly evenly into <b>mitigation-only ($17 bn)</b>, <b>adaptation-only ($16 bn)</b> and <b>both ($17 bn)</b>.</li>
+</ol>
+${bars([["Share of project aid",34],["Share of all bilateral aid",24],["Share of all development aid",20]],40,"%","")}
+<p class="src">Climate-related share of each total, 2024. The "about one-fifth" figure assumes no multilateral aid goes to climate, so the true share is probably a little higher.</p>
+<h3>Over time</h3>
+<ul>
+<li>Climate aid rose from about <b>$22 bn (18%) in 2010</b> to <b>$50 bn (34%) in 2024</b>.</li>
+<li>The 2010 figure is too low, because 37% of aid then wasn't checked for climate at all. Since 2014, under 10% goes unchecked.</li>
+<li>In 2010 the money was mostly mitigation. Now projects that include adaptation get more than mitigation-only ones.</li>
+</ul>`},
+{t:"OWID check 2: is the 'climate' label honest?", h:`
+<p>A project can be tagged in two ways:</p>
+<ul>
+<li><b>Principal</b>: climate is the main reason the project exists.</li>
+<li><b>Significant</b>: climate is a side goal of a project that would have happened anyway.</li>
+</ul>
+<p>The problem: <b>more than half</b> of climate-tagged money is "significant only", yet the <b>full value</b> of the project is counted as climate money.</p>
+<div class="key">Count only the "principal" projects and climate's share of bilateral project aid falls from <b>34% to 13%</b>.</div>
+<table>
+<tr><th>Real example</th><th>Tag</th><th>Why it's doubtful</th></tr>
+<tr><td>Japan → Iraq: Samawah water supply, $310 m</td><td>Adaptation, principal</td><td>A city needs clean, reliable water anyway. Is that climate or ordinary development?</td></tr>
+<tr><td>France → Tanzania: Kakono hydro plant, $122 m</td><td>Principal</td><td>Electricity access is a development goal in its own right.</td></tr>
+<tr><td>South Korea → Tanzania: hospital and training centre, $163 m</td><td>Mitigation, significant</td><td>An ordinary hospital. All $163 m counts as climate money because the building is energy-efficient.</td></tr>
+</table>
+<h3>Two opposite worries</h3>
 <div class="vs">
-<div><h3>Displacement</h3><p>Climate projects crowd out traditional aid: clean energy instead of bed nets or maternal nutrition.</p></div>
-<div><h3>Relabelling</h3><p>Old aid gets a climate tag, ticking off climate pledges with <b>no new money</b>.</p></div>
+<div><h3>Displacement</h3><p>Real new climate projects <b>crowd out</b> ordinary aid. Money goes to clean energy instead of malaria bed nets or child nutrition.</p></div>
+<div><h3>Relabelling</h3><p>Old aid just gets a <b>climate sticker</b>. The donor ticks off its climate promise without spending any new money.</p></div>
 </div>
-<p>The ideal is <b>additionality</b>. Ritchie guesses both worries are happening, but the data can't say how much of each.</p>
-<div class="kim">This is Skovgaard's <b>over-coding</b> and <b>"new and additional"</b> debate, measured. Use OWID's numbers as evidence in a Skovgaard answer.</div>`},
+<p>The ideal is <b>additionality</b>: climate money on top of ordinary aid. Ritchie guesses both worries are happening, but the data can't show how much of each.</p>
+<div class="kim"><b>Link to Skovgaard:</b> this is his "over-coding" and "new and additional" debate, now with numbers. In an essay, use OWID's 34% → 13% figure as evidence for his point.</div>`},
+{t:"Recap & how to write it up", h:`
+<table>
+<tr><th>Question</th><th>Rich countries say</th><th>Poor countries say</th></tr>
+<tr><td>What counts?</td><td>Broad: loans, relabelled aid, private money</td><td>Narrow: new public money, ideally grants</td></tr>
+<tr><td>Guiding value?</td><td>Efficiency (value for money)</td><td>Equity (CBDR, responsibility, vulnerability)</td></tr>
+<tr><td>Who pays?</td><td>No formula. China should chip in.</td><td>A formula by GDP or emissions. Rich countries pay.</td></tr>
+<tr><td>Spend on?</td><td>Mitigation, in emerging economies</td><td>Adaptation too (50:50), for the most vulnerable</td></tr>
+<tr><td>Who decides?</td><td>Donors, World Bank (control)</td><td>UN funds (a voice)</td></tr>
+</table>
+<h3>A 4-step answer skeleton</h3>
+<ol>
+<li><b>Define</b> climate finance (rich→poor, mitigation and/or adaptation, "expected" effect). Root it in the UNFCCC (1992, "new and additional", CBDR) and the $100 bn promise (2009, 2020 deadline, met only in 2022).</li>
+<li><b>What counts:</b> the onion, over-coding, "new and additional" vs the 0.7% aid target, loans vs grants (grant equivalent), mobilised private money.</li>
+<li><b>Equity vs efficiency</b> in raising the money (who pays) and spending it (mitigation vs adaptation, who decides). Use Table 9.1.</li>
+<li><b>Evidence and conclusion:</b> OWID (34% → 13%; displacement vs relabelling). A fragmented system with the rich/poor split running through it.</li>
+</ol>`},
 {t:"Quiz: Climate finance", q:[
 ["At COP15 in Copenhagen (2009), developed countries committed to",
  ["provide 0.7% of their GNI as climate grants by 2015","mobilise jointly USD 100 bn a year by 2020, public and private","pay USD 30 billion a year to the Adaptation Fund until 2030","cut emissions 40% and fund a Green Climate Fund of $1 trillion"],1,
  "$30 bn was fast-start finance for 2010–12. 0.7% of GNI is the older aid target."],
+["Which of these counts as 'climate finance' under Skovgaard's definition?",
+ ["India funding its own solar parks from its national budget","A UK grant for a flood-defence project in Bangladesh","A Japanese firm building a wind farm inside Germany","A Chinese loan to an African country for a hydro dam"],1,
+ "Only flows from developed to developing countries count. Domestic, rich-to-rich and South–South flows are excluded."],
 ["In the UNFCCC 'onion' diagram, which flow is the most controversial to count as climate finance?",
- ["Disbursements by the Green Climate Fund","Bilateral ODA labelled as climate-related by the donor countries themselves","Private finance mobilised through MDB guarantees","Domestic climate investment within developing countries themselves"],1,
- "Self-labelling causes over-coding, and it may not be new and additional to aid."],
+ ["Disbursements by the Green Climate Fund","Bilateral aid labelled as climate-related by donor countries themselves","Private finance mobilised through MDB guarantees","Domestic climate investment within developing countries themselves"],1,
+ "Donors label their own projects (over-coding), and the money may not be new and additional to aid."],
 ["What is the 'grant equivalent' of a concessional loan?",
  ["The total face value of the loan including interest","The loan's market value minus its actual value","The share of the loan spent on adaptation projects","The amount of private finance the loan mobilises"],1,
- "This stops a $1 m loan being counted the same as a $1 m grant."],
+ "It counts only the gift part of a cheap loan, so a $1 m loan isn't counted the same as a $1 m grant."],
+["Developing countries insist climate finance be 'new and additional'. This means it should be",
+ ["given only through the Green Climate Fund","on top of the existing aid promise of 0.7% of GNI","provided as new loans rather than older grants","added to developing countries' own climate budgets"],1,
+ "Otherwise donors can relabel existing aid as climate money. Paris dropped the phrase."],
 ["Which norm would prioritise adaptation finance for the most vulnerable countries?",
  ["Efficiency, which maximises global mitigation per dollar","Vulnerability, an equity norm","Effectiveness, which ignores costs and equity","Additionality, which concerns the source of funds"],1,
  "Efficiency points toward mitigation in emerging economies. Vulnerability points toward adaptation in poor countries."],
 ["Why is mitigation finance easier to justify on efficiency grounds than adaptation finance?",
- ["Mitigation projects are always far cheaper than adaptation projects","Mitigation is a global public good","Adaptation finance can only be given as loans, not grants","Adaptation is already covered by the 0.7% aid target"],1,
- "Mitigation is Pareto-improving given lower abatement costs in the South. Adaptation's benefits to donors are indirect."],
+ ["Mitigation projects are always far cheaper than adaptation projects","Mitigation is a global public good that benefits donors too","Adaptation finance can only be given as loans, not grants","Adaptation is already covered by the 0.7% aid target"],1,
+ "Cutting emissions anywhere helps everyone, and it's cheaper in the South (Pareto-improving). Adaptation's benefits to donors are only indirect."],
+["Why do developed countries prefer routing climate finance through the World Bank rather than UNFCCC funds?",
+ ["The World Bank only gives grants, never loans","World Bank votes depend on money contributed","UNFCCC funds are barred from adaptation projects","The World Bank refuses all fossil-fuel lending"],1,
+ "The UNFCCC works by consensus, which gives developing countries leverage. At the World Bank, the rich have most votes."],
 ["According to OWID, what share of bilateral project aid was climate-related in 2024, and what if only 'principal objective' projects counted?",
  ["About 34%, or 13% counting only principal-objective projects","About 20%, rising to 34% if multilateral aid is included","About 13%, rising to 34% once adaptation is added","About 50%, falling to 31% after removing non-allocable aid"],0,
  "More than half of climate-tagged funding is secondary-objective only, yet counted in full."],
